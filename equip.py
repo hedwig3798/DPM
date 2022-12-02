@@ -1,5 +1,6 @@
 import math
 
+
 class equip:
 
     def __init__(self, name, part, level, main_stat, sub_stat_1, sub_stat_2, hp, atk, atk_p, atk_sub, main_stat_p,
@@ -131,7 +132,8 @@ class equip:
 
         elif self.part == "we":
             for i in range(15):
-                self.add_all_atk(self.atk//50 + 1)
+                self.add_atk(self.atk//50 + 1)
+                self.atk_sub += self.atk_sub//50 + 1
 
             if self.level == 130:
                 self.add_all_atk(37)
@@ -172,6 +174,12 @@ class equip:
                 self.add_main_stat((self.level//40 + 1) * 7)
                 self.add_all_stat((self.level//40 + 1) * 7)
 
+    def total_upgrade(self):
+        self.scroll_upgrade()
+        self.star_force()
+        self.option_stat()
+        self.legendary_potential()
+
     def __repr__(self):
         result = ""
         result += f"이름: {self.name} \n"
@@ -196,11 +204,7 @@ class equip:
 # option, set_option, superior, gard_ignore, boss_dmg, cri_rate, cri_dmg
 if __name__ == "__main__":
     arcane_wand = equip("arcane_wand", "we", 200, 100, 100, 0, 0, 347, 0, 206, 0, 0, 9, True, 0, False, 20, 30, 0, 0)
-    arcane_wand.scroll_upgrade()
-    arcane_wand.star_force()
-    arcane_wand.option_stat()
-    arcane_wand.legendary_potential()
-
+    arcane_wand.total_upgrade()
     print(arcane_wand)
 
 
