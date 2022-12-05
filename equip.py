@@ -4,37 +4,67 @@ import csv
 
 class equip:
 
-    def __init__(self, name, part, level, main_stat, sub_stat_1, sub_stat_2, hp, atk, atk_p, atk_sub, main_stat_p,
-                 all_stat_p, upgrade,
-                 option, set_option, superior, gard_ignore, boss_dmg, cri_rate, cri_dmg):
-        self.name = name  # string
-        self.part = part  # string we: weapon ar: armor ac: accessories gl: glove
-        self.level = level  # int
-        self.main_stat = main_stat  # int
-        self.sub_stat_1 = sub_stat_1  # int
-        self.sub_stat_2 = sub_stat_2  # int
-        self.hp = hp  # int
-        self.atk = atk  # int
-        self.atk_p = atk_p  # int
-        self.atk_sub = atk_sub  # int
-        self.main_stat_p = main_stat_p  # int
-        self.all_stat_p = all_stat_p  # int
-        self.upgrade = upgrade  # int
-        self.option = option  # int
-        self.set_option = set_option  # int
-        self.superior = superior  # int
-        self.gard_ignore = gard_ignore  # float
-        self.boss_dmg = boss_dmg  # int
-        self.cri_rate = cri_rate  # int
-        self.cri_dmg = cri_dmg  # int
+    # def __init__(self, name, part, level, main_stat, sub_stat_1, sub_stat_2, hp, atk, atk_p, atk_sub, main_stat_p,
+    #              all_stat_p, upgrade,
+    #              option, set_option, superior, gard_ignore, boss_dmg, cri_rate, cri_dmg):
+    #     self.name = name  # string
+    #     self.part = part  # string we: weapon ar: armor ac: accessories gl: glove
+    #     self.level = level  # int
+    #     self.main_stat = main_stat  # int
+    #     self.sub_stat_1 = sub_stat_1  # int
+    #     self.sub_stat_2 = sub_stat_2  # int
+    #     self.hp = hp  # int
+    #     self.atk = atk  # int
+    #     self.atk_p = atk_p  # int
+    #     self.atk_sub = atk_sub  # int
+    #     self.main_stat_p = main_stat_p  # int
+    #     self.all_stat_p = all_stat_p  # int
+    #     self.upgrade = upgrade  # int
+    #     self.option = option  # int
+    #     self.set_option = set_option  # int
+    #     self.superior = superior  # int
+    #     self.gard_ignore = gard_ignore  # float
+    #     self.boss_dmg = boss_dmg  # int
+    #     self.cri_rate = cri_rate  # int
+    #     self.cri_dmg = cri_dmg  # int
+    #
+    #     self.init_main_stat = main_stat  # int
+    #     self.init_sub_stat_1 = sub_stat_1  # int
+    #     self.init_sub_stat_2 = sub_stat_2  # int
+    #     self.init_hp = hp  # int
+    #     self.init_atk = atk  # int
+    #     self.init_atk_sub = atk_sub  # int
+    #     self.init_all_stat_p = all_stat_p  # int
 
-        self.init_main_stat = main_stat  # int
-        self.init_sub_stat_1 = sub_stat_1  # int
-        self.init_sub_stat_2 = sub_stat_2  # int
-        self.init_hp = hp  # int
-        self.init_atk = atk  # int
-        self.init_atk_sub = atk_sub  # int
-        self.init_all_stat_p = all_stat_p  # int
+    def __init__(self, ele_list):
+        self.name = ele_list[0].strip()  # string
+        self.part = ele_list[1].strip()   # string we: weapon ar: armor ac: accessories gl: glove
+        self.level = int(ele_list[2])  # int
+        self.main_stat = int(ele_list[3])  # int
+        self.sub_stat_1 = int(ele_list[4])  # int
+        self.sub_stat_2 = int(ele_list[5])  # int
+        self.hp = int(ele_list[6])  # int
+        self.atk = int(ele_list[7])  # int
+        self.atk_p = int(ele_list[8])  # int
+        self.atk_sub = int(ele_list[9])  # int
+        self.main_stat_p = int(ele_list[10])  # int
+        self.all_stat_p = int(ele_list[11])  # int
+        self.upgrade = int(ele_list[12])  # int
+        self.option = True if ele_list[13].strip() == "True" else False  # bool
+        self.set_option = ele_list[14].strip()   # string
+        self.superior = True if ele_list[15].strip() == "True" else False # bool
+        self.gard_ignore = float(ele_list[16])  # float
+        self.boss_dmg = int(ele_list[17])  # int
+        self.cri_rate = int(ele_list[18])  # int
+        self.cri_dmg = int(ele_list[19])  # int
+
+        self.init_main_stat = int(ele_list[3])  # int
+        self.init_sub_stat_1 = int(ele_list[4])  # int
+        self.init_sub_stat_2 = int(ele_list[5])  # int
+        self.init_hp = int(ele_list[6])  # int
+        self.init_atk = int(ele_list[7])  # int
+        self.init_atk_sub = int(ele_list[9])  # int
+        self.init_all_stat_p = int(ele_list[11])  # int
 
     def add_main_stat(self, stat):
         self.main_stat += stat
@@ -55,6 +85,7 @@ class equip:
     def scroll_upgrade(self):
         # 무기강화
         if self.part == "we":
+
             self.add_atk(self.upgrade * 9)
             self.add_main_stat(self.upgrade * 4)
 
@@ -108,6 +139,7 @@ class equip:
         if self.superior:
             return
         if self.part == "ar" or self.part == "ac" or self.part == "gl":
+
             if self.level == 130:
                 self.add_all_atk(45)
                 self.add_all_stat(75)
@@ -132,6 +164,7 @@ class equip:
                 self.add_atk(7)
 
         elif self.part == "we":
+
             for i in range(15):
                 self.add_atk(self.atk//50 + 1)
                 self.atk_sub += self.atk_sub//50 + 1
@@ -204,8 +237,20 @@ class equip:
 # name, part, level, main_stat, sub_stat_1, sub_stat_2, hp, atk, atk_p, atk_sub, main_stat_p, all_stat_p, upgrade,
 # option, set_option, superior, gard_ignore, boss_dmg, cri_rate, cri_dmg
 if __name__ == "__main__":
-    arcane_wand = equip("arcane_wand", "we", 200, 100, 100, 0, 0, 347, 0, 206, 0, 0, 9, True, 0, False, 20, 30, 0, 0)
-    arcane_wand.total_upgrade()
-    print(arcane_wand)
+    f = open('item_data.csv', 'r', encoding='utf-8')
+    rdr = csv.reader(f)
 
+    # g_wand = equip("g_wand", "we", 200, 150, 150, 0, 0, 400, 237, 0, 0, 0, 8, True, "Lucky", False, 20, 30, 0, 0)
+    # g_wand.total_upgrade()
+    # print(g_wand)
+
+    for i in rdr:
+        if i[0] == "g_wand":
+            g_wand_list = equip(i)
+            print(g_wand_list)
+            g_wand_list.total_upgrade()
+            print(g_wand_list)
+            break
+
+    f.close()
 
