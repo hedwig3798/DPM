@@ -213,7 +213,10 @@ class equip:
                 self.sub_stat_2[2] += ((self.level // 40 + 1) * 7)
 
     def total_upgrade(self):
-        self.scroll_upgrade()
+        if self.part == "we":
+            self.scroll_upgrade()
+        else:
+            self.chaos_upgrade()
         self.star_force()
         self.option_stat()
         self.legendary_potential()
@@ -243,7 +246,7 @@ class equip:
 # name, part, level, main_stat, sub_stat_1, sub_stat_2, hp, atk, atk_p, atk_sub, main_stat_p, all_stat_p, upgrade,
 # option, set_option, superior, gard_ignore, boss_dmg, cri_rate, cri_dmg
 if __name__ == "__main__":
-    g_wand = equip("g_staff")
+    g_wand = equip("maister_ring")
     print(g_wand)
 
 
