@@ -1,49 +1,49 @@
 name, part, level, main_stat, sub_stat_1, sub_stat_2, hp, atk, atk_p, atk_sub, main_stat_p, all_stat_p, upgrade, option, set_option, superior, gard_ignore, boss_dmg, cri_rate, cri_dmg
 ---
-g_saber, we, 200, 150, 150, 0, 0, 326, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_two_hand_sword, we, 200, 150, 150, 0, 0, 340, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_hammer, we, 200, 150, 150, 0, 0, 326, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_two_hand_hammer, we, 200, 150, 150, 0, 0, 340, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_ax, we, 200, 150, 150, 0, 0, 326, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_to_hand_ax, we, 200, 150, 150, 0, 0, 340, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_spear, we, 200, 150, 150, 0, 0, 340, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_polearm, we, 200, 150, 150, 0, 0, 304, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_tuner, we, 200, 150, 150, 0, 0, 340, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_ellaha, we, 200, 150, 150, 0, 0, 255, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
+g_saber, we, 200, 150, 150, 0, 0, 326, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_two_hand_sword, we, 200, 150, 150, 0, 0, 340, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_hammer, we, 200, 150, 150, 0, 0, 326, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_two_hand_hammer, we, 200, 150, 150, 0, 0, 340, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_ax, we, 200, 150, 150, 0, 0, 326, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_to_hand_ax, we, 200, 150, 150, 0, 0, 340, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_spear, we, 200, 150, 150, 0, 0, 340, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_polearm, we, 200, 150, 150, 0, 0, 304, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_tuner, we, 200, 150, 150, 0, 0, 340, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_ellaha, we, 200, 150, 150, 0, 0, 255, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
 ---
-g_wand, we, 200, 150, 150, 0, 0, 400, 0, 237, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_staff, we, 200, 150, 150, 0, 0, 406, 0, 251, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_shning_rod, we, 200, 150, 150, 0, 0, 400, 0, 237, 0, 0, 8 True, Lucky, False, 20, 30, 0, 0
-g_esp_limiter, we, 200, 150, 150, 0, 0, 400, 0, 237, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_magic_gauntlet, we, 200, 150, 150, 0, 0, 400, 0, 237, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
+g_wand, we, 200, 150, 150, 0, 0, 400, 0, 237, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_staff, we, 200, 150, 150, 0, 0, 406, 0, 251, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_shning_rod, we, 200, 150, 150, 0, 0, 400, 0, 237, 0, 0, 8 True, Lucky, False, False, 0.2, 0.3, 0
+g_esp_limiter, we, 200, 150, 150, 0, 0, 400, 0, 237, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_magic_gauntlet, we, 200, 150, 150, 0, 0, 400, 0, 237, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
 ---
-g_bow, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_cross_bow, we, 200, 150, 150, 0, 0, 326, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_dual_bow_gun, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_ancient_bow, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_breath_shooter, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
+g_bow, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_cross_bow, we, 200, 150, 150, 0, 0, 326, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_dual_bow_gun, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_ancient_bow, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_breath_shooter, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
 ---
-g_dagger, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_guard, we, 200, 150, 150, 0, 0, 172, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_cane, we, 200, 150, 150, 0, 0, 326, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_chain, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_energy_chain, we, 200, 150, 150, 0, 0, 255, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_fan, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
+g_dagger, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_guard, we, 200, 150, 150, 0, 0, 172, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_cane, we, 200, 150, 150, 0, 0, 326, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_chain, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_energy_chain, we, 200, 150, 150, 0, 0, 255, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3 0, 0
+g_fan, we, 200, 150, 150, 0, 0, 318, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
 ---
-g_pistol, we, 200, 150, 150, 0, 0, 249, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_claw, we, 200, 150, 150, 0, 0, 255, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_soul_shooter, we, 200, 150, 150, 0, 0, 255, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
-g_siege_gun, we, 200, 150, 150, 0, 0, 348, 0, 0, 0, 0, 8, True, Lucky, False, 20, 30, 0, 0
+g_pistol, we, 200, 150, 150, 0, 0, 249, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_claw, we, 200, 150, 150, 0, 0, 255, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_soul_shooter, we, 200, 150, 150, 0, 0, 255, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
+g_siege_gun, we, 200, 150, 150, 0, 0, 348, 0, 0, 0, 0, 8, True, Lucky, False, 0.2, 0.3, 0, 0
 ---
-a_hat, ar, 200, 65, 65, 0, 0, 7, 0, 0, 0, 0, 12, True, acain, False, 15, 0, 0, 0
+a_hat, ar, 200, 65, 65, 0, 0, 7, 0, 0, 0, 0, 12, True, acain, False, 0.15, 0, 0, 0
 a_glove, gl, 200, 40, 40, 0, 0, 9, 0, 0, 0, 0, 8, True, acain, False, 0, 0, 0, 0
 a_cape, ar, 200, 35, 35, 35, 0, 6, 0, 6, 0, 0, 8, True, acain, False, 0, 0, 0, 0
 a_shoes, ar, 200, 40, 40, 0, 0, 9, 0, 0, 0, 0, 8, True, acain, False, 0, 0, 0, 0
 a_shoulder, ac, 200, 35, 35, 35, 0, 20, 0, 20, 0, 0, 2, False, acain, False, 0, 0, 0, 0
 ---
-c_armor, ar, 150, 30, 30, 0, 0, 2, 0, 0, 0, 0, 8, True, luta, False, 5, 0, 0, 0
-c_pants, ar, 150, 30, 30, 0, 0, 2, 0, 0, 0, 0, 8, True, luta, False, 5, 0, 0, 0
-c_hat, ar, 150, 40, 40, 35, 360, 2, 0, 6, 0, 0, 12, True, luta, False, 10, 0, 0, 0
+c_armor, ar, 150, 30, 30, 0, 0, 2, 0, 0, 0, 0, 8, True, luta, False, 0.05, 0, 0, 0
+c_pants, ar, 150, 30, 30, 0, 0, 2, 0, 0, 0, 0, 8, True, luta, False, 0.05, 0, 0, 0
+c_hat, ar, 150, 40, 40, 35, 360, 2, 0, 6, 0, 0, 12, True, luta, False, 0.10, 0, 0, 0
 ---
 maister_ring, ac, 140, 5, 5, 5, 200, 1, 0, 1, 0, 0, 2, False, maister, False, 0, 0, 0, 0
 guardian_angel_ring, ac, 160, 5, 5, 5, 200, 1, 0, 1, 0, 0, 3, False, t_boss, False, 0, 0, 0, 0

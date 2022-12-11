@@ -81,28 +81,28 @@ class equip:
     # 에픽 9퍼 공10
     def epic_potential(self):
         if self.part != "we":
-            self.main_stat_p[4] += 9
-            self.atk[4] += 10
+            self.main_stat_p[3] += 9
+            self.atk[3] += 10
 
         elif self.part == "we":
-            self.atk_p[4] += 9
-            self.atk[4] += 10
+            self.atk_p[3] += 9
+            self.atk[3] += 10
 
     # 유니크 정옵 2줄 공 10
     def unique_potential(self):
         if self.part != "we":
-            self.main_stat_p[4] += 15
-            self.atk[4] += 10
+            self.main_stat_p[3] += 15
+            self.atk[3] += 10
 
         elif self.part == "we":
-            self.atk_p[4] += 15
-            self.atk[4] += 10
+            self.atk_p[3] += 15
+            self.atk[3] += 10
 
     # 방어구: 12 9 9 / 7 5 5
     # 무기, 장갑 별도 계산
     def legendary_potential(self):
         if self.part == "ar" or self.part == "ac":
-            self.main_stat_p[4] += 30 + 17
+            self.main_stat_p[3] += 30 + 17
 
     # 스타포스 22성 적용
     def star_force(self):
